@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101114">
+  <meta name="referrer" content="no-referrer">
+  <title>Five Star · Home TV</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><a class="brand" href="" aria-label="Home TV">HOME<span>TV</span></a><span class="home-label">YOUR FRONT ROW</span></header>
+    <section class="heading">
+      <p class="eyebrow"><span class="dot"></span> FIVE STAR SPORTS</p>
+      <h1>五星体育<span>Live, at home.</span></h1>
+      <p class="intro">On your phone. On the big screen.</p>
+    </section>
+    <section class="player-card" aria-label="Live video player">
+      <video id="video" controls playsinline preload="none" x-webkit-airplay="allow" aria-label="Five Star Sports live stream"></video>
+      <div class="player-footer"><span id="state" role="status" aria-live="polite">Connecting…</span><span class="channel-label">SMG / 五星体育</span></div>
+    </section>
+    <div class="actions">
+      <button id="play" class="primary" disabled>Connecting…</button>
+      <button id="airplay" hidden aria-label="Choose an AirPlay device">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16H3V4h18v12h-2M12 14l-6 7h12z"/></svg>AirPlay
+      </button>
+      <button id="reconnect" class="quiet">Reconnect</button>
+    </div>
+    <p id="message" class="message" role="status" aria-live="polite">Finding a live connection. The first connection may take a few minutes.</p>
+    <section class="airplay-note">
+      <span class="note-number">01 — THE BIG SCREEN</span>
+      <h2>Make it a TV night.</h2>
+      <p>Open this page in iPhone Safari, start the video, then tap AirPlay and choose your Apple TV. Keep all three devices on the same home network.</p>
+    </section>
+    <footer>Home TV <span>Independent player · Feed provided by SMG</span></footer>
+  </main>
+</body>
+</html>
